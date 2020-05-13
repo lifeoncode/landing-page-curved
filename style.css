@@ -49,6 +49,11 @@ h1, h2, h3{
     font-family: 'Poppins', sans-serif;
 }
 
+p{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 
 
 header{
@@ -59,15 +64,184 @@ header{
     grid-template-columns: repeat(2, 1fr);
 }
 
-header > div + div{
-    text-align: right;
+header img{
+    width: 40%;
 }
 
+header > div + div{
+    text-align: right;
+    align-self: center;
+}
+
+header a{
+    font-size: 0.9rem;
+    color: var(--primary-pink);
+    border: 1px solid var(--primary-pink);
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+header a:hover{
+    background-color: var(--primary-pink);
+    color: #fff;
+}
 
 #showcase{
     width: 60%;
     margin: auto;
+    color: var(--dark-cyan);
+    text-align: center;
+    padding: 6rem 0;
 }
+
+#showcase h1{
+    font-size: 2rem;
+}
+
+#showcase p{
+    margin: 1rem 0 2rem 0;   
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: var(--primary-pink);
+    border-radius: 2rem;
+    box-shadow: 2px 2px 6px var(--dark-cyan);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+
+
+#showcase .image,
+#showcase .text{
+    padding: 4rem 0;
+}
+
+#showcase .stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.stats img{
+    width: 10%;
+    margin: auto;
+}
+
+.stats h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.stats p{
+    font-size: 1rem;
+    color: var(--dark-cyan);
+    opacity: 0.5;
+}
+
+
+#grow,
+#conversations,
+#users{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#grow, #users{
+    background-color: var(--pale-blue);
+}
+
+#conversations{
+    margin: 6rem 0;
+    padding: 4rem 0;
+}
+
+
+.grow-bg{
+    position: absolute;
+    z-index: 1;
+}
+
+.grow-bg.top{
+    top: -130px;
+}
+
+.grow-bg.bottom{
+    /* transform: rotate(180deg); */
+    bottom: -100px;
+}
+
+
+.users-bg{
+    position: absolute;
+    z-index: 1;
+}
+
+.users-bg.top{
+    top: -130px;
+}
+
+.users-bg.bottom{
+    bottom: -130px;
+}
+
+
+
+.grow_inner,
+.conversations_inner,
+.users_inner,
+.footer_inner{
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 4rem;
+}
+
+.grow_inner .text,
+.conversations_inner .text,
+.users_inner .text{
+    align-self: center;
+    color: var(--dark-cyan);
+}
+
+.grow_inner h3,
+.conversations_inner h3,
+.users_inner h3{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+
+
+#bottom{
+    padding: 6rem 0;
+    margin: 6rem 0;
+    text-align: center;
+}
+
+#bottom h3{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
 
 
 
@@ -78,19 +252,127 @@ header > div + div{
 
 /* footer */
 footer{
-    background: url(./images/bg-footer-top-desktop.svg)no-repeat center/cover;
-    padding: 4rem 0;
+    background-color: var(--dark-cyan);
+    padding: 4rem 0 2rem 0;
+    position: relative;
 }
+
+.footer-bg{
+    position: absolute;
+    top: -140px;
+}
+
+footer form{
+    text-align: center;
+    padding: 0 2rem;
+    color: #fff;
+}
+
+form input{
+    width: 50%;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    border: 0;
+}
+form button{
+    width: 20%;
+    border: 0;
+    border-radius: 0.2rem;
+    background-color: var(--primary-pink);
+    color: #fff;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+form p{
+    margin: 1rem 0;
+}
+
+.footer_inner > div img{
+    width: 20%;
+}
+
+.footer_inner li img{
+    width: 5%;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.footer_inner li{
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+.footer_inner > div p{
+    margin: 1rem 0 2rem 0;
+    color: #fff;
+}
+
 
 .social{
     text-align: center;
-}
-
-.social li{
-    display: inline;
-    padding: 0 2rem;
+    padding: 2rem 0;
 }
 
 .social img{
-    width: 20%;
+    cursor: pointer;
+    width: 2%;
+    display: inline;
+    margin: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+
+
+    
+    
+    
+    
+    
+    
 }

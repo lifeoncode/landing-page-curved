@@ -31,8 +31,15 @@ button:focus, input:focus{
     outline: none;
 }
 
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 body{
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -40,4 +47,50 @@ body{
 
 h1, h2, h3{
     font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header > div + div{
+    text-align: right;
+}
+
+
+#showcase{
+    width: 60%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    background: url(./images/bg-footer-top-desktop.svg)no-repeat center/cover;
+    padding: 4rem 0;
+}
+
+.social{
+    text-align: center;
+}
+
+.social li{
+    display: inline;
+    padding: 0 2rem;
+}
+
+.social img{
+    width: 20%;
 }
